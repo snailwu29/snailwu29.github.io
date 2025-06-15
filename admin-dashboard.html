@@ -180,19 +180,7 @@
         });
 
         // 初始化
-        firebase.auth().onAuthStateChanged(async (user) => {
-            if (user) {
-                const isAdmin = await checkAdminStatus(user);
-                if (!isAdmin) {
-                    alert('您沒有管理員權限');
-                    window.location.href = 'home.html';
-                    return;
-                }
-                currentUser = user;
-                loadPosts();
-            } else {
-                window.location.href = 'login.html';
-            }
+        
         });
     </script>
 </body>
