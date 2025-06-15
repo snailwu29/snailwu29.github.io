@@ -1,1 +1,85 @@
-<h1>my profolio</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Instagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fafafa;
+    }
+    header {
+      background-color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .post {
+      background: white;
+      max-width: 500px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    .post img {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+    }
+    .post .caption {
+      padding: 10px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+    .profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MiniGram</div>
+    <div>🔍 ❤️ 👤</div>
+  </header>
+
+  <div class="post">
+    <div class="profile">
+      <img src="https://via.placeholder.com/40" alt="User Profile" />
+      <strong>@username</strong>
+    </div>
+    <img src="https://via.placeholder.com/500x300" alt="Post Image" />
+    <div class="caption">
+      <strong>@username</strong> Just chilling at the beach 🌊
+    </div>
+  </div>
+
+  <div class="post">
+    <div class="profile">
+      <img src="https://via.placeholder.com/40" alt="User Profile" />
+      <strong>@anotheruser</strong>
+    </div>
+    <img src="https://via.placeholder.com/500x300/aaa" alt="Post Image" />
+    <div class="caption">
+      <strong>@anotheruser</strong> Coffee time ☕
+    </div>
+  </div>
+
+</body>
+</html>
